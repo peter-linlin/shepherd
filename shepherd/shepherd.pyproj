@@ -31,15 +31,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="manage.py" />
+    <Compile Include="masterdata\admin.py" />
+    <Compile Include="masterdata\apps.py" />
+    <Compile Include="masterdata\migrations\__init__.py" />
+    <Compile Include="masterdata\models.py" />
+    <Compile Include="masterdata\tests.py" />
+    <Compile Include="masterdata\views.py" />
+    <Compile Include="masterdata\__init__.py" />
     <Compile Include="shepherd\__init__.py" />
     <Compile Include="shepherd\settings.py" />
     <Compile Include="shepherd\urls.py" />
     <Compile Include="shepherd\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="masterdata\templates\masterdata\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="masterdata\" />
+    <Folder Include="masterdata\migrations\" />
+    <Folder Include="masterdata\templates\" />
+    <Folder Include="masterdata\templates\masterdata\" />
     <Folder Include="shepherd\" />
   </ItemGroup>
   <ItemGroup>
