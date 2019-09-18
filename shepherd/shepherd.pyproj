@@ -44,12 +44,16 @@
     <Compile Include="shepherd\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="masterdata\static\site.css" />
+    <Content Include="masterdata\templates\masterdata\about.html" />
     <Content Include="masterdata\templates\masterdata\index.html" />
+    <Content Include="masterdata\templates\masterdata\layout.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="masterdata\" />
     <Folder Include="masterdata\migrations\" />
+    <Folder Include="masterdata\static\" />
     <Folder Include="masterdata\templates\" />
     <Folder Include="masterdata\templates\masterdata\" />
     <Folder Include="shepherd\" />

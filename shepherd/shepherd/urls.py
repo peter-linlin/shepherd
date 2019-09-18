@@ -27,6 +27,7 @@ import masterdata.views
 urlpatterns = [
     url(r'^$', masterdata.views.index, name='index'),
     url(r'^home$', masterdata.views.index, name='home'),
+    url(r'^about$', masterdata.views.about, name='about'),
 ]
 
 """
