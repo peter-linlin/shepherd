@@ -340,3 +340,4 @@ ASALocalRun/
 healthchecksdb
 /shepherd/env
 /smith/env
+/serviceway/env
