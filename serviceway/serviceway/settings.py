@@ -24,7 +24,7 @@ SECRET_KEY = '56847624-a468-41eb-a975-9d3458ff3293'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["peter-linlin2-diebold-nixdorf.azurewebsites.net"]
 
 # App references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
