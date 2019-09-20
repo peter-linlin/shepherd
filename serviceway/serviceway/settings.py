@@ -24,7 +24,7 @@ SECRET_KEY = '56847624-a468-41eb-a975-9d3458ff3293'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["peter-linlin2-diebold-nixdorf.azurewebsites.net"]
+ALLOWED_HOSTS = ["peter-linlin2-diebold-nixdorf.azurewebsites.net","localhost"]
 
 # App references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'serviceway.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'shepherd',
+        'USER':'shepherduser',
+        'PASSWORD':'Diebold2012',
+        'HOST':'postgressql-peterlinlin4.postgres.database.azure.com',
+        'PORT':'',
     }
 }
 
