@@ -60,6 +60,7 @@
     <Folder Include="serviceway\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\templates\app\404.html" />
     <Content Include="db.sqlite3" />
     <Content Include="requirements.txt" />
     <Content Include="app\samples.json" />
