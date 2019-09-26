@@ -63,6 +63,7 @@
     <Content Include="app\templates\404.html" />
     <Content Include="app\templates\app\404.html" />
     <Content Include="db.sqlite3" />
+    <Content Include="mysite_nginx.conf" />
     <Content Include="requirements.txt" />
     <Content Include="app\samples.json" />
     <Content Include="app\templates\app\details.html" />
@@ -95,6 +96,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="uwsgi_params" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.html">

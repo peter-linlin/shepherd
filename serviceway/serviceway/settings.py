@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '56847624-a468-41eb-a975-9d3458ff3293'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["peter-linlin2-diebold-nixdorf.azurewebsites.net","localhost","40.122.119.165"]
 
