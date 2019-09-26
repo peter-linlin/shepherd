@@ -144,7 +144,7 @@ LOGGING = {
             'propagate': True,
             'level':'DEBUG',
         },
-        'MYAPP': {
+        'app': {
             'handlers': ['file'],
             'level': 'DEBUG',
         },
