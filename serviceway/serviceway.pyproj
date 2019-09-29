@@ -96,6 +96,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="serviceway\serviceway.ini" />
     <Content Include="uwsgi_params" />
   </ItemGroup>
   <ItemGroup>
