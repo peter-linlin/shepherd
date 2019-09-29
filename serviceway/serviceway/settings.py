@@ -135,7 +135,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'mysite.log',
+            'filename': '/var/www/log/mysite.log',
             'formatter': 'verbose'
         },
     },
