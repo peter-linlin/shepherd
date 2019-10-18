@@ -11,19 +11,40 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import socket
+import re
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-print("base_dir = " + BASE_DIR)
+# print("base_dir = " + BASE_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '56847624-a468-41eb-a975-9d3458ff3293'
 
+PRODUCTION_SERVERS = ['40.122.119.165','azub1804']
+
+def check_env():
+    for item in PRODUCTION_SERVERS:
+        match = re.match(r"(" + item + ")", socket.gethostname())
+        if match:
+            return True
+
+if check_env():
+    PRODUCTION = True
+else:
+    PRODUCTION = False
+
+DEBUG = not PRODUCTION
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = False
+
+print ("BASE_DIR" + BASE_DIR)
+print ("computer name =" + os.environ['COMPUTERNAME'])
+print("sock.gethostname() = " + socket.gethostname())
 
 ALLOWED_HOSTS = ["localhost","40.122.119.165","azub1804"]
 
