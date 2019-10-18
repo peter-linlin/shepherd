@@ -6,6 +6,15 @@ from django.urls import path
 from app.models import Poll
 import app.views
 
+
+from django.contrib import admin
+
+# Admin Site Config
+admin.sites.AdminSite.site_header = 'Shepherd Administration'
+admin.sites.AdminSite.site_title = 'Shepherd site'
+admin.sites.AdminSite.index_title = 'Shepherd MasterData Management'
+
+
 urlpatterns = [
     path('',
         app.views.PollListView.as_view(
