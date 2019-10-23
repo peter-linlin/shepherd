@@ -15,7 +15,7 @@ from app.models import Choice, Poll
 
 
 class PollListView(ListView):
-    """Renders the home page, with a list of all polls. """
+    """Renders the home page, with a list of all polls. test zhou """
     model = Poll
 
     def get_context_data(self, **kwargs):
